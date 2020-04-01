@@ -6,6 +6,7 @@
   "dependencies": {
     "date-fns": "^2.11.1"
   },
+  "keywords": ["brasil", "agro", "agronegócio", "ano-safra", "safra", "agricultura"],
   "repository": "https://github.com/nandobmont/ano-safra.git",
   "author": "nandobmont <nandobmont@gmail.com>",
   "license": "MIT"
