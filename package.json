@@ -1,0 +1,11 @@
+{
+  "name": "ano-safra",
+  "version": "1.0.0",
+  "description": "Descobrir ano-safra brasileiro a partir de uma data.",
+  "main": "index.js",
+  "author": "nandobmont",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^2.11.1"
+  }
+}
