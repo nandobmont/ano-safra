@@ -1,6 +1,6 @@
 {
   "name": "ano-safra",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Descobrir ano-safra brasileiro a partir de uma data.",
   "main": "index.js",
   "dependencies": {
