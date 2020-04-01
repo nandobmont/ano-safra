@@ -22,7 +22,6 @@ const getSemestres = (data = new Date()) => ({
  * Opcionalmente pode ser passada uma string como separador do anoSafra
  * @param {Date} [data=new Date()]
  * @param {String} [separador="/"]
- * @returns {object} { anoSafra: "YY/YY", inicio: "YY", fim: "YY" }
  */
 const anoSafra = (data = new Date(), separador = "/") => {
   const anoAtual = format(data, "yy");
@@ -55,7 +54,6 @@ const anoSafra = (data = new Date(), separador = "/") => {
  * Essa função recebe uma data (JS Date) como parâmetro
  * e retorna 1 se ela pertencer ao primeiro semestre ou 2 se ela pertencer ao segundo semestre do ano.
  * @param {Date} [data=new Date()]
- * @returns {number} 1 ou 2
  */
 const semestreAtual = data => {
   return isAfter(data, getSemestres(data)[1].ate) ? 2 : 1;
@@ -65,7 +63,6 @@ const semestreAtual = data => {
  * Essa função recebe uma data (JS Date) como parâmetro e retorna qual é o ano-safra correspondente
  * indicando seu início/fim e se a data pertence ao ano-safra atual.
  * @param {Date} [data=new Date()]
- * @returns {object} { anoSafra: "YY/YY", inicio: "YY", fim: "YY", isAtual: boolean }
  */
 const safraAtual = (data = new Date()) => {
   const atual = anoSafra();
